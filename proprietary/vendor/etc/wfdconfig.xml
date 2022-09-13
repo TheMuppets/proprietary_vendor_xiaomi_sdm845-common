@@ -135,10 +135,12 @@
         <!--
             Standby Resume capability is supported
         -->
+    <!-- #ifdef OPLUS_BUG_STABILITY -->
+    <!-- Jeremy.lin@MULTIMEDIA.MEDIASERVER.WFD.1099213, 2021/08/02, Close Standby Resum -->
         <StandbyResumeCapability>
-            <Valid>1</Valid>
+            <Valid>0</Valid>
         </StandbyResumeCapability>
-
+    <!-- #endif OPLUS_BUG_STABILITY -->
         <!--
             Explicit AV format change
             Not supported
@@ -704,7 +706,10 @@
         To disable/enable audio stream playback
         support during power suspend - 0 or 1
     -->
-    <AudioStreamInSuspend>0</AudioStreamInSuspend>
+    <!-- #ifdef OPLUS_BUG_STABILITY -->
+    <!-- Liang.Xu@MULTIMEDIA.AUDIOSERVER.FRAMEWORK.1297775, 2020/04/03, Modify for audio should still playing on TV after screen off -->
+    <AudioStreamInSuspend>1</AudioStreamInSuspend>
+    <!-- #endif OPLUS_BUG_STABILITY -->
 
     <!--
         Compensation delay for audio
