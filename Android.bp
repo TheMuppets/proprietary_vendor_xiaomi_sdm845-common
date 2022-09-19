@@ -107,18 +107,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "dpmserviceapp",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "ims",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
@@ -154,6 +142,18 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
 dex_import {
 	name: "WfdCommon",
 	owner: "xiaomi",
@@ -170,20 +170,6 @@ dex_import {
 	name: "QtiTelephonyServicelibrary",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/QtiTelephonyServicelibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.qti.dpmframework",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "dpmapi",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
 	system_ext_specific: true,
 }
 
@@ -205,6 +191,20 @@ dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
 	system_ext_specific: true,
 }
 
