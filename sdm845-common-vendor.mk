@@ -769,9 +769,9 @@ PRODUCT_PACKAGES += \
     IWlanService \
     SoterService \
     TimeService \
-    PowerOffAlarm \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
+    PowerOffAlarm \
     QtiTelephonyService \
     uceShimService \
     ims \
