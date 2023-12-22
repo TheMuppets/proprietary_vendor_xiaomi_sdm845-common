@@ -770,14 +770,14 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     QtiTelephonyService \
     uceShimService \
-    ims \
-    qcrilmsgtunnel \
     WfdService \
     dpmserviceapp \
+    ims \
+    qcrilmsgtunnel \
     WfdCommon \
     audiosphere \
-    qcrilhook \
-    qti-telephony-common \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
-    dpmapi
+    dpmapi \
+    qcrilhook \
+    qti-telephony-common
